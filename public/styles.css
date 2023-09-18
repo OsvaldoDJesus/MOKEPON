@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body {
+    font-family: 'Concert One', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-color: black;
+    
+    
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 50px;
+}
+
+.subtitulo {
+    color: rgb(250, 189, 252);
+    font-size: 30;
+
+}
+
+.tarjetas, .botones-ataques {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background:#450404;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+}
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+ 
+#boton-mascota {
+    font-family: 'Concert One', cursive;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid rgb(133, 59, 212);
+    color: rgb(225, 40, 83);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgb(46, 169, 235);
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.boton-de-ataque {
+    font-family: 'Concert One', cursive;
+    background-color: darkred;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 80px;
+    color: white;
+    height: 60px;
+}
+
+#reiniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensajes {
+    width: 380px;
+    background: rgb(61, 218, 46);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    font-family: 'Concert One', cursive;
+    height: 50px;
+    width: 140px;
+    background-color: purple;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(125, 212, 255);
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.ataques-enemigo {
+    background-color: red;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    font-family: 'Concert One', cursive;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(133, 59, 212);
+    color: rgb(225, 40, 83);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;  
+    }
+}
+
+@media (max-width: 360px) {
+  #ver-mapa div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

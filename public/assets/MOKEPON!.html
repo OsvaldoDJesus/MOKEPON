@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0161)https://static.platzi.com/media/tmp/class-files/github/curso-programacion-basica/curso-programacion-basica-54-render-dinamico-html/programar/mokepon/mokepon.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>MOKEPON!</title>
+<link rel="stylesheet" href="./MOKEPON!_files/styles.css">
+</head>
+            <body>
+<section id="seleccionar-mascota">
+<h1 class="titulo">Mokepono</h1>
+<h2 class="subtitulo">Elige tu mascota:</h2>
+<div id="contenedorTarjetas" class="tarjetas">
+
+        <input type="radio" name="mascota" id="Hipodoge">
+        <label class="tarjeta-de-mokepon" for="Hipodoge">
+            <p>Hipodoge</p>
+            <img src="./MOKEPON!_files/mokepons_mokepon_hipodoge_attack.webp" alt="Hipodoge">
+        </label>
+        
+        <input type="radio" name="mascota" id="Capipepo">
+        <label class="tarjeta-de-mokepon" for="Capipepo">
+            <p>Capipepo</p>
+            <img src="./MOKEPON!_files/mokepons_mokepon_capipepo_attack.webp" alt="Capipepo">
+        </label>
+        
+        <input type="radio" name="mascota" id="Ratigueya">
+        <label class="tarjeta-de-mokepon" for="Ratigueya">
+            <p>Ratigueya</p>
+            <img src="./MOKEPON!_files/mokepons_mokepon_ratigueya_attack.webp" alt="Ratigueya">
+        </label>
+        </div>
+<button id="boton-mascota">Seleccionar</button>
+</section>
+<section id="seleccionar-ataque" style="display: none;">
+<h1 class="titulo">Mokepon</h1>
+<h2 class="subtitulo">Elige tu ataque:</h2>
+<div id="contenedorAtaques" class="tarjetas-ataques">
+</div>
+<div id="mensajes">
+<p id="resultado">Mucha suerte</p>
+<section id="reiniciar" style="display: none;">
+<button id="boton-reiniciar">Reiniciar</button>
+</section>
+</div>
+<div class="ataques">
+<div class="ataques-jugador">
+<p id="vidas-jugador">3</p>
+<p id="mascota-jugador"></p>
+<div id="ataques-del-jugador"></div>
+</div>
+<div class="ataques-enemigo">
+<p id="vidas-enemigo">3</p>
+<p id="mascota-enemigo"></p>
+<div id="ataques-del-enemigo"></div>
+</div>
+</div>
+</section>
+<script src="./MOKEPON!_files/mokepon.js.descarga"></script>
+
+</body></html>
